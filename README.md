@@ -75,6 +75,8 @@ Then delete it using its rule number:
 ```
 sudo ufw delete <RULE_NUMBER>
 ```
+### Step 7: Summary – How Firewalls Work
+
 UFW acts as a frontend for iptables, allowing you to manage firewall rules easily.
 
 -Allow rules let specific traffic through (e.g., sudo ufw allow 80 for web).
