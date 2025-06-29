@@ -42,15 +42,15 @@ Then delete it by its rule number:
 sudo ufw delete <RULE_NUMBER>
 # Step 7: Conclusion – How Firewalls Work
 It acts as frontend to iptables and lets you maintain firewall rules easily.
-    • Allow rules let some traffic pass through (e.g., sudo ufw allow 80 for web).
-    • Deny rules halt traffic (e.g., sudo ufw deny 23).
-    • Rules can be for specific ports, IPs, and protocols.
-    • Precedence does matter. UFW processes rules top-down.
-    • Firewalls play a significant role in preventing undesirable or harmful traffic and serve as a security guard.
+    - Allow rules let some traffic pass through (e.g., sudo ufw allow 80 for web).
+    - Deny rules halt traffic (e.g., sudo ufw deny 23).
+    - Rules can be for specific ports, IPs, and protocols.
+    - Precedence does matter. UFW processes rules top-down.
+    - Firewalls play a significant role in preventing undesirable or harmful traffic and serve as a security guard.
 # Conclusion
 By carrying out this activity, users will:
-    • Familiarize themselves with how to use firewall rules on Linux.
-    • Learn how to block insecure services (e.g., Telnet).
-    • Be able to enable secure services (e.g., SSH).
-    • Be able to test and reverse firewall changes.
-    • Learn how firewalls secure computer systems from unauthorized access.
+    - Familiarize themselves with how to use firewall rules on Linux.
+    - Learn how to block insecure services (e.g., Telnet).
+    - Be able to enable secure services (e.g., SSH).
+    - Be able to test and reverse firewall changes.
+    - Learn how firewalls secure computer systems from unauthorized access.
