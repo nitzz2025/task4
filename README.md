@@ -53,3 +53,36 @@ sudo ufw deny 23
 
 ###   Step 4: Test the Block Rule
 Try connecting to the blocked port locally. If the firewall is working correctly, the connection should be refused or hang.
+```
+telnet localhost 23
+```
+
+You may need to install telnet:
+```
+sudo apt install telnet
+```
+#### Step 5: Allow SSH (Port 22)
+Ensure that SSH (Port 22) is explicitly allowed, especially important if you're working on a remote system:
+```
+sudo ufw allow 22
+```
+### Step 6: Remove the Block Rule (Clean Up)
+First, check which rule number corresponds to the Telnet block:
+```
+sudo ufw status numbered
+```
+Then delete it using its rule number:
+```
+sudo ufw delete <RULE_NUMBER>
+```
+UFW acts as a frontend for iptables, allowing you to manage firewall rules easily.
+
+-Allow rules let specific traffic through (e.g., sudo ufw allow 80 for web).
+
+-Deny rules block traffic (e.g., sudo ufw deny 23).
+
+-Rules can apply to specific ports, IPs, and protocols.
+
+-Order matters. UFW processes rules top-down.
+
+-Firewalls are critical in filtering unwanted or dangerous traffic, acting as a security gatekeeper.
