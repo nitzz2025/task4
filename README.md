@@ -88,3 +88,21 @@ UFW acts as a frontend for iptables, allowing you to manage firewall rules easil
 -Order matters. UFW processes rules top-down.
 
 -Firewalls are critical in filtering unwanted or dangerous traffic, acting as a security gatekeeper.
+
+
+
+### Outcome
+
+By completing this task, users will:
+
+- Understand how to manage firewall rules on Linux.
+
+- Learn to block unsafe services (like Telnet).
+
+- Know how to allow secure services (like SSH).
+
+- Be able to test and reverse firewall changes.
+
+- Know how firewalls secure systems from unauthorized access.
+
+
